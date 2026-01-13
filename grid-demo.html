@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    #grid-example-one div { 
+      padding: 20px;
+      background-color: rgb(68, 68, 68);
+    }
+
+    #grid-example-one {
+      display: grid;
+      gap: 2px;
+      grid-template-columns: repeat(5, 1fr);
+    }
+
+    #grid-example-two {
+      display: grid;
+      gap: 2px;
+      grid-template-columns: repeat(5, 1fr);
+      grid-template-rows: repeat(6, 1fr);
+    }
+
+    #grid-example-two div {
+      background-color: lightblue;
+      padding: 20px;
+    }
+    
+
+    #header {
+      grid-row-start: 1;
+      grid-row-end: 2;
+      grid-column-start: 1;
+      grid-column-end: 6;
+    }
+
+    #sidebar {
+	grid-row-start: 2; 
+grid-row-end: 6; 
+grid-column-start: 1; 
+grid-column-end: 2;
+}
+    #content-one {
+      grid-row-start: 2;
+      grid-row-end: 4;
+      grid-column-start: 2;
+      grid-column-end: 6;
+    }
+
+    #content-two {
+      grid-row-start: 4;
+      grid-row-end: 6;
+      grid-column-start: 2;
+      grid-column-end: 4;
+    }
+
+    #content-three {
+      grid-row-start: 4;
+      grid-row-end: 6;
+      grid-column-start: 4;
+      grid-column-end: 6;
+    }
+
+    #footer {
+      grid-row-start: 6;
+      grid-row-end: 7;
+      grid-column-start: 1;
+      grid-column-end: 6;
+    }
+  </style>
+</head>
+
+<body>
+  <div id="grid-example-one">
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+
+
+  
+  </div>
+
+  <div id="grid-example-two">
+    <div id="header">header</div>
+    <div id="sidebar">sidebar</div>
+    <div id="content-one">content-one</div>
+    <div id="content-two">content-two</div>
+    <div id="content-three">content-three</div>
+    <div id="footer">footer</div>
+  </div>
+  
+</body>
+</html>
